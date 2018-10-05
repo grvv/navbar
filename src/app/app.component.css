@@ -1,0 +1,72 @@
+:host {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Margin padding reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tab-menu{
+    width: 100%;
+}
+
+.tabMenu {
+    list-style: none;
+    width: 100%;
+}
+
+.linkText {
+    font-size: 20px;
+}
+
+.menu-item:link,
+.menu-item:active,
+.menu-item:visited {
+
+    display: block;
+    width: 20%;
+    float: left;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #777;
+    background-color: #D3D3D3;
+
+    transition: all 0.2s
+
+}
+
+.linkActive {
+    background-color: #fff !important;
+    border-bottom: 2px solid #d35400;
+}
+
+.linkActive i {
+    color: #d35400;
+}
+
+i {
+    margin-right: 8px;
+    font-size: 23px;
+}
+
+/* https://css-tricks.com/almanac/selectors/n/not/ */
+.menu-item:not(.linkActive):hover {
+    background-color: #E8E8E8;
+}
+
+/* Clearfix for float */
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
